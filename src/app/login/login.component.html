@@ -1,0 +1,26 @@
+<div class="navbar navbar-dark bg-dark shadow-sm">
+  <div class="container">
+    <a href="#" class="navbar-brand d-flex align-items-center">
+      <strong>TradicArte</strong>
+    </a>
+  </div>
+</div>
+<div class="login-page">
+  <div class="container">
+    <form [formGroup]="formLogin" (ngSubmit)="onSubmit()">
+      <p class="h3">Ingreso de usuario</p>
+      <br>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Correo electronico</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+               formControlName="email">
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+        <input type="password" class="form-control" id="exampleInputPassword1" formControlName="password">
+      </div>
+      <p class="message">¿No tienes una cuenta? <a href="/login">Registrase</a></p>
+      <button type="submit" class="btn btn-primary">Ingresar</button>
+    </form>
+  </div>
+</div>

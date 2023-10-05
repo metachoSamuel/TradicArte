@@ -1,0 +1,39 @@
+<div class="navbar navbar-dark bg-dark shadow-sm">
+  <div class="container">
+    <a href="#" class="navbar-brand d-flex align-items-center">
+      <strong>TradicArte</strong>
+    </a>
+  </div>
+</div>
+<div class="login-page">
+  <div class="container">
+    <form [formGroup]="formReg" (ngSubmit)="onSubmit()">
+      <p class="h3">Registro de usuario</p>
+      <br>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Nombre de usuario</label>
+        <input type="email" class="form-control" aria-describedby="emailHelp"
+        formControlName="name">
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Apellido de usuario</label>
+        <input type="email" class="form-control" aria-describedby="emailHelp"
+               formControlName="lastName">
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Correo electronico</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+        formControlName="email">
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+        <input type="password" class="form-control" id="exampleInputPassword1" formControlName="password">
+      </div>
+      <p class="message">¿Ya tienes una cuenta? <a href="/login">Ingresar</a></p>
+      <button type="submit" class="btn btn-primary">Registrarse</button>
+    </form>
+  </div>
+</div>
+
+
+
